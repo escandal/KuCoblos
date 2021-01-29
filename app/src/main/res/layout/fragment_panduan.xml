@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PanduanFragment"
+    android:background="@color/navyBlue"
+    android:id="@+id/panduan_frag">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/judulPanduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panduan Verifikasi"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="100dp"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panduan"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_below="@id/judulPanduan"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

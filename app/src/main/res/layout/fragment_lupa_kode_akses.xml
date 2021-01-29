@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LupaKodeAksesFragment"
+    android:id="@+id/lupakodeakses_frag">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/navyBlue"
+      android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_buat_kode_akses_baru"
+          android:layout_width="550dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+          android:layout_marginLeft="50dp"
+          android:text="Buat Kode Akses Baru"
+          android:textColor="@color/white"
+          android:textSize="30sp"
+          android:textStyle="bold" />
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="50dp">
+          <ImageView
+              android:id="@+id/ic_email_buat_kode_akses_baru"
+              android:src="@drawable/ic_email"
+              android:layout_width="60dp"
+              android:layout_height="100dp"
+              android:layout_marginStart="30dp"/>
+          <EditText
+              android:id="@+id/ET_email_buat_kode_akses_baru"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:hint="Masukan Email"
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="10dp"
+              android:textColorHint="@color/grey"
+              android:textStyle="bold"
+              android:textColor="@color/white"
+              android:layout_toRightOf="@id/ic_email_buat_kode_akses_baru"
+              android:inputType="textEmailAddress"/>
+          <ImageView
+              android:id="@+id/ic_phone_buat_kode_akses_baru"
+              android:src="@drawable/ic_handphone"
+              android:layout_width="60dp"
+              android:layout_height="100dp"
+              android:layout_below="@id/ic_email_buat_kode_akses_baru"
+              android:layout_marginLeft="30dp"/>
+          <EditText
+              android:id="@+id/ET_NoHp_buat_kode_akses_baru"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:hint="Masukan No Hp"
+              android:textStyle="bold"
+              android:textColorHint="@color/grey"
+              android:layout_marginLeft="100dp"
+              android:layout_marginTop="60dp"
+              android:layout_below="@id/ET_email_buat_kode_akses_baru"
+              android:inputType="number"
+              android:textColor="@color/white"/>
+          <Button
+              android:id="@+id/btn_buat_kode_akses_baru"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Selesai"
+              android:layout_marginStart="100dp"
+              android:layout_marginTop="230dp"
+              android:background="@color/hijauterang"/>
+      </RelativeLayout>
+  </LinearLayout>
+
+</FrameLayout>

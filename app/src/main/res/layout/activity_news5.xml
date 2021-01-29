@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News5"
+    android:background="@color/navyBlue">
+    <TextView
+        android:id="@+id/tvNewsHeader5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Header5"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+    <ScrollView
+        android:layout_below="@+id/tvNewsHeader5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/ivNews5"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:background="@drawable/dpr"
+                android:layout_marginLeft="70dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivNews5"
+                android:text="@string/isiBerita5"
+                android:textColor="#000"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

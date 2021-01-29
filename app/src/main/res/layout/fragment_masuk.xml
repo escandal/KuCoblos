@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MasukFragment"
+    android:id="@+id/masuk_frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/navyBlue">
+
+        <TextView
+            android:id="@+id/tv_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:paddingStart="140dp"
+            android:paddingTop="100dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp">
+            <ImageView
+                android:id="@+id/ic_nik_masuk"
+                android:src="@drawable/ic_id_card"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"/>
+            <EditText
+                android:id="@+id/ET_nik_masuk"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="NIK Kamu"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/ic_nik_masuk"
+                android:inputType="number"/>
+            <ImageView
+                android:id="@+id/ic_kodeakses_masuk"
+                android:src="@drawable/ic_pass"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/ic_nik_masuk"
+                android:layout_marginStart="30dp"/>
+            <EditText
+                android:id="@+id/ET_kodeakses_masuk"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Kode Akses Kamu"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/ic_kodeakses_masuk"
+                android:layout_below="@id/ET_nik_masuk"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/btn_lupakodeakses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ET_kodeakses_masuk"
+                android:layout_alignParentRight="true"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Lupa Kode AKses?"
+                android:textColor="@color/hijauterang"/>
+            <Button
+                android:id="@+id/btn_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ET_kodeakses_masuk"
+                android:text="Masuk"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="80dp"
+                android:background="@color/hijauterang"/>
+            <TextView
+                android:id="@+id/tv_regis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun?"
+                android:textColor="@color/white"
+                android:layout_below="@id/btn_masuk"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:textSize="15dp"/>
+            <Button
+                android:id="@+id/btn_daftar_disini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar disini"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/hijauterang"
+                android:layout_toRightOf="@id/tv_regis"
+                android:layout_below="@id/btn_masuk"
+                android:layout_marginTop="7dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

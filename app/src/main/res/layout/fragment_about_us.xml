@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AboutUsFragment"
+    android:background="@color/navyBlue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tentangKami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Kami"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tentangKami">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/foto_adit"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/adit"
+                    android:layout_marginTop="50dp"/>
+                <TextView
+                    android:id="@+id/nama_adit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama : Muhammad Raditya Putra Prayitno"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_marginTop="50dp"/>
+                <TextView
+                    android:id="@+id/nim_adit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nim : 181112566"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/nama_adit"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/jurusan_adit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan : Teknik Informatika"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/nim_adit"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/kelebihan_adit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kelebihanAdit"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/jurusan_adit"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quoteAdit"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/kelebihan_adit"/>
+
+                <ImageView
+                    android:id="@+id/foto_agus"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="400dp"
+                    android:src="@drawable/agus" />
+
+                <TextView
+                    android:id="@+id/nama_agus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama : Rizki Agus Setiawan Lubis"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_marginTop="100dp"
+                    android:layout_below="@id/kelebihan_adit"/>
+                <TextView
+                    android:id="@+id/nim_agus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nim : 181112302"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/nama_agus"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/jurusan_agus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan : Teknik Informatika"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/nim_agus"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/kelebihan_agus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kelebihanAgus"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_adit"
+                    android:layout_below="@id/jurusan_agus"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quoteAgus"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/foto_agus"
+                    android:layout_below="@id/kelebihan_agus"/>
+                <ImageView
+                    android:id="@+id/foto_arep"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/arep"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/foto_agus"/>
+                <TextView
+                    android:id="@+id/nama_arep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama : Arief Ardiansyah"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_arep"
+                    android:layout_marginTop="80dp"
+                    android:layout_below="@id/kelebihan_agus"/>
+                <TextView
+                    android:id="@+id/nim_arep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nim : 181112094"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_arep"
+                    android:layout_below="@id/nama_arep"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/jurusan_arep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan : Teknik Informatika"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_arep"
+                    android:layout_below="@id/nim_arep"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/kelebihan_arep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kelebihanArep"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/foto_arep"
+                    android:layout_below="@id/jurusan_arep"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quoteArep"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/foto_arep"
+                    android:layout_below="@id/kelebihan_arep"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
